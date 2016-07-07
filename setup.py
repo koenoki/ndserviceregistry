@@ -24,7 +24,7 @@ from setuptools import find_packages
 
 PACKAGE = 'nd_service_registry'
 __version__ = None
-execfile(os.path.join(PACKAGE, 'version.py'))  # set __version__
+exec(open(os.path.join(PACKAGE, 'version.py')).read())  # set __version__
 
 
 def maybe_rm(path):
